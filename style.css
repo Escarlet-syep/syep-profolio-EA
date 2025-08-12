@@ -1,6 +1,63 @@
-*{     margin: 0;     padding: 0;     box-sizing:Border-Box; }  body{     background-color:light rgb(153, 200, 231);     text-align: center;     line-height: 2.4; }  .hero{    padding:20px 10px;      }   .hero img{      border-radius: 50%;     margin-bottom: 10px; }  .section h2{      font-size: 22px; }   .hero h2{     font-size: 37px; }  .accent{     color: rgb(0, 0, 0); }  .grid{     display: flex;     gap: 15px;     justify-content:center;     flex-wrap:wrap; }   .grid div{     padding: 15px;     border-radius: 100px;     background-color: rgb(137, 183, 213);     width: 260px;; }  
- @media (max-width: 768px){     
-    body{background-color:rgb(220, 233, 233);}   }
+/* Reset default margin, padding, and set box-sizing */
+* {
+    margin: 0;
+    padding: 10px; /* Corrected the padding to a valid value */
+    box-sizing: border-box; /* Corrected the typo to lowercase */
+}
+
+/* Basic styles for body */
+body {
+    background-color: rgb(235, 187, 231); /* Corrected the background color */
+    text-align: center;
+    line-height: 2.4;
+}
+
+/* Hero section styling */
+.hero {
+    padding: 20px 10px;
+}
+
+.hero img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Header styles for sections */
+.section h2 {
+    font-size: 22px;
+}
+
+/* Hero section title */
+.hero h2 {
+    font-size: 37px;
+}
+
+/* Accent color */
+.accent {
+    color: rgb(0, 0, 0);
+}
+
+/* Grid styling for skills */
+.grid {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    padding: 15px;
+    border-radius: 100px;
+    background-color: rgb(236, 239, 242);
+    width: 260px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(220, 233, 233); /* Lighter background for smaller screens */
+    }
+}
 
 
 

@@ -1,67 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
- <meta charset="UTF-8">  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Escarlet's Portfolio </title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escarlet's Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+    /* Back to Top Button */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    /* Hover Effect for the Back to Top Button */
+    #back-to-top:hover {
+      transform: scale(1.1);
+      background-color: #0056b3;
+    }
+
+    /* Fade in the button as you scroll */
+    #back-to-top.show {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Logo Hover Animation */
+    #logo {
+      font-size: 2rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    #logo:hover {
+      transform: scale(1.1);
+      color: #007bff;
+    }
+
+    /* Floating Heart Animation */
+    .floating-heart {
+      position: absolute;
+      animation: float 4s infinite ease-in-out;
+      font-size: 3rem;
+      color: red;
+      z-index: 999;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-      EscarletA
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link" href="#about-description">About Me</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="testimonials.html">Testimonials</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="logo">
+        EscarletA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="#about-description">About Me</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="testimonials.html">Testimonials</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<section id="home" class="hero">
-    <img src="path/to/your-image.jpg" alt="Escarlet's portrait" width="100%"/>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
     <h2>Hi, I am <span class="accent">Escarlet Abreu</span></h2>
     <p>I'm a high school student learning web development!</p>
-</section>
+  </section>
 
-<section id="about-description" class="section">
-<h2>About Me</h2>
-<p>Get to know me! I can speak fluent Spanish and English. I'm organized and a good listener, and I enjoy helping others. In my free time I like learning new things and I also like shopping.</p>
-</section>
+  <!-- About Me Section -->
+  <section id="about-description" class="section">
+    <h2>About Me</h2>
+    <p>Hello! My name is Escarlet, and I’m a passionate and hardworking individual who thrives on creativity and collaboration. I’m always eager to learn new skills and take on challenges that help me grow, whether it’s through web development, design, or teamwork. As a high school student diving into the world of coding, I aim to create meaningful solutions that are both functional and aesthetically pleasing.</p>
+    <p>Outside of work, I love exploring new interests and connecting with people who inspire me. I believe in making a positive impact in my community and constantly seek ways to give back and learn from those around me. I’m a lifelong learner, a problem solver, and someone who is always excited about the next opportunity to grow and contribute.</p>
+  </section>
 
-<section id="skills" class="section"> 
-<h2>My Skills</h2>
-<div class="grid"> 
-    <div><i class="fab fa-html5"></i> HTML</div>
-    <div><i class="fab fa-css3-alt"></i> CSS</div>
-    <div><i class="fab fa-js-square"></i> JavaScript</div>
-</div>
-</section>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+    <div class="grid">
+      <div><i class="fab fa-html5"></i> HTML</div>
+      <div><i class="fab fa-css3-alt"></i> CSS</div>
+      <div><i class="fab fa-js-square"></i> JavaScript</div>
+    </div>
+  </section>
 
-<section id="projects-description" class="section">
-<h2>My Projects</h2>
-<!-- Add your projects here -->
-</section>
+  <!-- Projects Section -->
+  <section id="projects-description" class="section">
+    <h2>My Projects</h2>
+    <!-- Add your projects here -->
+  </section>
 
-<section id="Contact" class="section">
-<h2>Contact Me</h2>
-<p>Feel free to reach out to me via email at <a href="mailto:esscarletabreu1212@gmail.com">esscarletabreu1212@gmail.com</a></p>
-</section>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me via email at <a href="mailto:esscarletabreu1212@gmail.com">esscarletabreu1212@gmail.com</a></p>
+  </section>
 
+  <!-- Floating Heart -->
+  <div class="floating-heart" style="top: 10%; left: 50%; transform: translateX(-50%);">
+    <i class="fas fa-heart"></i>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="btn btn-primary" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   <script src="script.js"></script>
+
+  <script>
+    // Back to Top Button Functionality
+    const backToTopButton = document.getElementById("back-to-top");
+
+    // Show button when scrolled down
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.classList.add("show");
+      } else {
+        backToTopButton.classList.remove("show");
+      }
+    };
+
+    // Scroll back to top when button is clicked
+    backToTopButton.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
-  
+
 </html>

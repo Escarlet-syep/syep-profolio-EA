@@ -1,21 +1,24 @@
 const reviews = [
     {
         id: 1,
-        name: 'Amador De Trinidad',
-        img: '#',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        name: 'Edwin Amador',
+        img: 'student.png',
+        job: 'Spanish Teacher',
+        text: 'Escarlet Abreu distinguished herself as a resilient and outstsanding individual,Whom i considered to be one of my best students. Her diligent effort was evident in her consiostent class preperdness, which culiminated in her successfully passing the reagents exam.',
     },
     {
         id: 2,
-        name: 'Amandria Guadalupe',
+        name: 'Layla Negron',
         img: '#',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        job: ' Student',
+        text: 'Escarlet is a very hardworking person and she is always ready to help others. She is a great team player and has a positive attitude towards work.'
     },
     {
         id: 3,
-        name: 'Peter Jones',
+        name: 'Ean Worrell',
         img: '#',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        job: 'Student',
+        text: 'Escarlet is a really good friend of mine who I adore because she is very kind and funny. When your mood is down she always figures a way to make you laugh. And she is also very smart when you need help with something she is always willing to help you.',
     },
 ];
 
@@ -28,7 +31,6 @@ const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 
 let currentItem = 0;
-
 window.addEventListener('DOMContentLoaded', function(){
     const item = reviews[currentItem];
     img.src = item.img;
